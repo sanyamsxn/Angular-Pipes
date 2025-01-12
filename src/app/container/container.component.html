@@ -12,7 +12,7 @@
                 
                 @if(flag===false){
                     <span>{{temp.city}} :</span>
-                    <span id="value"> {{temp.value | number:'1.0-0'}}  &deg;C </span>
+                    <span id="value"> {{temp.value | temp:'cel':'fah'}}  </span>
                 }
                 @else{
                     <span>{{temp.city}} :</span>

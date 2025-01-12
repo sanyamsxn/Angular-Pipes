@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DecimalPipe } from '@angular/common';
+import { TemperaturePipe } from '../convert.pipe';
 interface Temperature{
   id:string;
   value:string;
@@ -9,7 +10,7 @@ interface Temperature{
 @Component({
   selector: 'app-container',
   standalone: true,
-  imports: [DecimalPipe],
+  imports: [DecimalPipe, TemperaturePipe],
   templateUrl: './container.component.html',
   styleUrl: './container.component.css'
 })
