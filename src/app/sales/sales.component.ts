@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CurrencyPipe } from '@angular/common';
+import { DatePipe } from '@angular/common';
 interface Sales{
   id : string;
   country : string;
@@ -8,7 +9,7 @@ interface Sales{
 @Component({
   selector: 'app-sales',
   standalone: true,
-  imports: [CurrencyPipe],
+  imports: [CurrencyPipe,DatePipe],
   templateUrl: './sales.component.html',
   styleUrl: './sales.component.css'
 })
@@ -21,4 +22,7 @@ sales :Sales[] = [
   {id : '5', country : 'Nashua', sales :1031902.00},
   {id : '6', country : 'Coloroda', sales :2350232.00},
 ];
+
+today:Date = new Date();
+
 }

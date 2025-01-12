@@ -23,13 +23,23 @@ h1{
     font-size:3rem;
 }
 
+h4{
+    font-style: italic;
+    width: 100%;
+}
+
 span:first-of-type{
-    font-size: 1.7rem;
-    color: rgb(23, 23, 36);
+    font-size:1.7rem;
+    text-align: left;
+    color:rgb(23, 23, 36) ;
     font-weight: bold;
 }
 
 span{
     font-size:1.4rem;
-    color: rgb(42, 113, 42);
+    color: rgb(46, 112, 33);
+}
+
+#sale{
+    margin-top: 10px;
 }
