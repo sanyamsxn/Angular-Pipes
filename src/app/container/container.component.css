@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#container{
+    height: 100vh;
+    width: 50%;
+    background: rgb(44, 44, 63);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size:1.4rem;
+    color: rgb(179, 178, 178);
+}
+
+.box{
+    width: 50%;
+    height: 80%;
+    border: 2px solid grey;
+    display: flex;
+    justify-content:start;
+    flex-direction: column;
+    align-items: center;
+}
+
+span:first-of-type{
+    font-size: 1.8rem;
+    color: whitesmoke;
+}
+
+button{
+    background: rgb(44, 44, 63);
+    color: whitesmoke;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+}

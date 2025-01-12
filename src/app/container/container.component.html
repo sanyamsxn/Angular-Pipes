@@ -1,0 +1,25 @@
+<div id="container">
+    <h1>Temperatures in cities</h1>
+    @if(!flag){
+        <button (click)="changeToFahr()">F</button>
+    }
+    @else{
+        <button (click)="changeToCel()">C</button>
+    }
+    <div class="box">
+        @for(temp of temps; track temp.id){
+            <div id="temp-row">
+                
+                @if(flag===false){
+                    <span>{{temp.city}} :</span>
+                    <span id="value"> {{temp.value | number:'1.0-0'}}  &deg;C </span>
+                }
+                @else{
+                    <span>{{temp.city}} :</span>
+                    <span> {{convertToNum(temp.value) * 9/5+32}} &deg; F </span>
+        
+                }
+            </div>
+        }
+    </div>
+</div>
