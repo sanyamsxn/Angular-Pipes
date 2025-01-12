@@ -16,7 +16,7 @@
                 }
                 @else{
                     <span>{{temp.city}} :</span>
-                    <span> {{convertToNum(temp.value) * 9/5+32}} &deg; F </span>
+                    <span> {{convertToNum(temp.value) * 9/5+32 | number:'1.0-0'}} &deg; F </span>
         
                 }
             </div>
